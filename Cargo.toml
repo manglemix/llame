@@ -1,0 +1,18 @@
+[package]
+name = "llame"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.76"
+bincode = "1.3.3"
+clap = { version = "4.4.11", features = ["derive"] }
+notify = "6.1.1"
+ollama-rs = { version = "0.1.5", features = ["stream"] }
+# path-slash = "0.2.1"
+serde = { version = "1.0.193", features = ["derive"] }
+tokio = { version = "1.35.1", features = ["rt", "macros", "parking_lot"] }
+tokio-stream = "0.1.14"
+toml = "0.8.8"
